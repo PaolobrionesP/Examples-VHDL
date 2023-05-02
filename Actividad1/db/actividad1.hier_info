@@ -1,0 +1,19 @@
+|actividad2
+en => salida.OUTPUTSELECT
+en => salida.OUTPUTSELECT
+en => salida.OUTPUTSELECT
+en => salida.OUTPUTSELECT
+entrada[0] => Mux0.IN5
+entrada[0] => Mux1.IN5
+entrada[0] => Mux2.IN5
+entrada[0] => Mux3.IN5
+entrada[1] => Mux0.IN4
+entrada[1] => Mux1.IN4
+entrada[1] => Mux2.IN4
+entrada[1] => Mux3.IN4
+salida[0] << salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] << salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] << salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] << salida.DB_MAX_OUTPUT_PORT_TYPE
+
+

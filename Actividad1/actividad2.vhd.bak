@@ -1,4 +1,4 @@
--- Using Conditional Signal Assignment Statement
+-- Using Selected Signal Assignment Statement
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -13,12 +13,14 @@ end entity actividad1;
 architecture top of actividad1 is
     signal q : std_logic_vector(3 downto 0);
 begin
-    q <= "0001" when entrada = "00" else
-         "0010" when entrada = "01" else
-         "0100" when entrada = "10" else
-         "1000";
+    with entrada select
+        q <= "0001" when "00",
+             "0010" when "01",
+             "0100" when "10",
+             "1000" when others;
     
-    salida <= q when en = '1' else "0000";
+    with en select
+        salida <=   q when '1',
+                  "0000" when others;
 
-    
 end architecture top;
