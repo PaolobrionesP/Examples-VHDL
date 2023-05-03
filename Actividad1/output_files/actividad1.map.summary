@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue May 02 18:28:22 2023
+Analysis & Synthesis Status : Successful - Tue May 02 19:26:00 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : actividad1
-Top-level Entity Name : actividad2
+Top-level Entity Name : actividad3
 Family : Cyclone IV E
-Total logic elements : 4
-    Total combinational functions : 4
+Total logic elements : 2
+    Total combinational functions : 2
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 7
+Total pins : 6
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

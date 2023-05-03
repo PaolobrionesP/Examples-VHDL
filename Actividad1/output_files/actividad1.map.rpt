@@ -1,5 +1,5 @@
 Analysis & Synthesis report for actividad1
-Tue May 02 18:28:22 2023
+Tue May 02 19:26:01 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,16 +42,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue May 02 18:28:22 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue May 02 19:26:00 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; actividad1                                  ;
-; Top-level Entity Name              ; actividad2                                  ;
+; Top-level Entity Name              ; actividad3                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 4                                           ;
-;     Total combinational functions  ; 4                                           ;
+; Total logic elements               ; 2                                           ;
+;     Total combinational functions  ; 2                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 7                                           ;
+; Total pins                         ; 6                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -65,7 +65,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; actividad2         ; actividad1         ;
+; Top-level entity name                                            ; actividad3         ; actividad1         ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -166,40 +166,40 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                         ; Library ;
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
-; actividad2.vhd                   ; yes             ; User VHDL File  ; C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad2.vhd ;         ;
+; actividad3.vhd                   ; yes             ; User VHDL File  ; C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad3.vhd ;         ;
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                    ;
-+---------------------------------------------+------------------+
-; Resource                                    ; Usage            ;
-+---------------------------------------------+------------------+
-; Estimated Total logic elements              ; 4                ;
-;                                             ;                  ;
-; Total combinational functions               ; 4                ;
-; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 0                ;
-;     -- 3 input functions                    ; 4                ;
-;     -- <=2 input functions                  ; 0                ;
-;                                             ;                  ;
-; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 4                ;
-;     -- arithmetic mode                      ; 0                ;
-;                                             ;                  ;
-; Total registers                             ; 0                ;
-;     -- Dedicated logic registers            ; 0                ;
-;     -- I/O registers                        ; 0                ;
-;                                             ;                  ;
-; I/O pins                                    ; 7                ;
-;                                             ;                  ;
-; Embedded Multiplier 9-bit elements          ; 0                ;
-;                                             ;                  ;
-; Maximum fan-out node                        ; entrada[1]~input ;
-; Maximum fan-out                             ; 4                ;
-; Total fan-out                               ; 23               ;
-; Average fan-out                             ; 1.28             ;
-+---------------------------------------------+------------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 2          ;
+;                                             ;            ;
+; Total combinational functions               ; 2          ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 1          ;
+;     -- 3 input functions                    ; 1          ;
+;     -- <=2 input functions                  ; 0          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 2          ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 6          ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; x[1]~input ;
+; Maximum fan-out                             ; 2          ;
+; Total fan-out                               ; 15         ;
+; Average fan-out                             ; 1.07       ;
++---------------------------------------------+------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -207,7 +207,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |actividad2                ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |actividad2         ; actividad2  ; work         ;
+; |actividad3                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |actividad3         ; actividad3  ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,14 +232,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 7                           ;
-; cycloneiii_lcell_comb ; 5                           ;
-;     normal            ; 5                           ;
-;         1 data inputs ; 1                           ;
-;         3 data inputs ; 4                           ;
+; boundary_port         ; 6                           ;
+; cycloneiii_lcell_comb ; 2                           ;
+;     normal            ; 2                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.63                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 1.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -258,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 02 18:27:53 2023
+    Info: Processing started: Tue May 02 19:25:32 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off actividad1 -c actividad1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -268,17 +268,20 @@ Info (12021): Found 2 design units, including 1 entities, in source file activid
 Info (12021): Found 2 design units, including 1 entities, in source file actividad2.vhd
     Info (12022): Found design unit 1: actividad2-top File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad2.vhd Line: 13
     Info (12023): Found entity 1: actividad2 File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad2.vhd Line: 5
-Info (12127): Elaborating entity "actividad2" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file actividad3.vhd
+    Info (12022): Found design unit 1: actividad3-selectiva File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad3.vhd Line: 13
+    Info (12023): Found entity 1: actividad3 File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad3.vhd Line: 5
+Info (12127): Elaborating entity "actividad3" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 11 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 4 logic cells
+Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4781 megabytes
-    Info: Processing ended: Tue May 02 18:28:22 2023
+    Info: Peak virtual memory: 4779 megabytes
+    Info: Processing ended: Tue May 02 19:26:01 2023
     Info: Elapsed time: 00:00:29
     Info: Total CPU time (on all processors): 00:00:34
 

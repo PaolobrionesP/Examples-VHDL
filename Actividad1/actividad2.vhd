@@ -1,3 +1,11 @@
+--*********************************
+-- Author: Paolo
+-- File: actividad2.vhd
+-- Version: 1.0
+-- Date: 05/2023
+-- Comments: Original
+--*********************************
+
 -- Using Selected Signal Assignment Statement
 library ieee;
 use ieee.std_logic_1164.all;

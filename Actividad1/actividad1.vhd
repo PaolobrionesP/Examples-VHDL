@@ -1,3 +1,11 @@
+--*********************************
+-- Author: Paolo
+-- File: actividad1.vhd
+-- Version: 1.0
+-- Date: 05/2023
+-- Comments: Original
+--*********************************
+
 -- Using Conditional Signal Assignment Statement
 library ieee;
 use ieee.std_logic_1164.all;
