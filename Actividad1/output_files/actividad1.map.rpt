@@ -1,5 +1,5 @@
 Analysis & Synthesis report for actividad1
-Tue May 02 19:26:01 2023
+Thu May 11 23:35:20 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue May 02 19:26:00 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu May 11 23:35:20 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; actividad1                                  ;
 ; Top-level Entity Name              ; actividad3                                  ;
@@ -248,7 +248,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -258,19 +258,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 02 19:25:32 2023
+    Info: Processing started: Thu May 11 23:34:37 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off actividad1 -c actividad1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file actividad6.vhd
+    Info (12022): Found design unit 1: actividad6-arch File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad6.vhd Line: 21
+    Info (12023): Found entity 1: actividad6 File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad6.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file actividad1.vhd
-    Info (12022): Found design unit 1: actividad1-top File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad1.vhd Line: 13
-    Info (12023): Found entity 1: actividad1 File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad1.vhd Line: 5
+    Info (12022): Found design unit 1: actividad1-top File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad1.vhd Line: 21
+    Info (12023): Found entity 1: actividad1 File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad1.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file actividad2.vhd
-    Info (12022): Found design unit 1: actividad2-top File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad2.vhd Line: 13
-    Info (12023): Found entity 1: actividad2 File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad2.vhd Line: 5
+    Info (12022): Found design unit 1: actividad2-top File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad2.vhd Line: 21
+    Info (12023): Found entity 1: actividad2 File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad2.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file actividad3.vhd
-    Info (12022): Found design unit 1: actividad3-selectiva File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad3.vhd Line: 13
-    Info (12023): Found entity 1: actividad3 File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad3.vhd Line: 5
+    Info (12022): Found design unit 1: actividad3-selectiva File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad3.vhd Line: 20
+    Info (12023): Found entity 1: actividad3 File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad3.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file actividad4.vhd
+    Info (12022): Found design unit 1: actividad4-concurrente File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad4.vhd Line: 23
+    Info (12023): Found entity 1: actividad4 File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad4.vhd Line: 15
+Info (12021): Found 2 design units, including 1 entities, in source file actividad5.vhd
+    Info (12022): Found design unit 1: actividad5-concurrente File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad5.vhd Line: 21
+    Info (12023): Found entity 1: actividad5 File: C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad5.vhd Line: 13
 Info (12127): Elaborating entity "actividad3" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -280,9 +289,9 @@ Info (21057): Implemented 8 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4779 megabytes
-    Info: Processing ended: Tue May 02 19:26:01 2023
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 4797 megabytes
+    Info: Processing ended: Thu May 11 23:35:20 2023
+    Info: Elapsed time: 00:00:43
+    Info: Total CPU time (on all processors): 00:00:41
 
 

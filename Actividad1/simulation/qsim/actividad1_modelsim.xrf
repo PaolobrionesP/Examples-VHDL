@@ -1,8 +1,14 @@
 vendor_name = ModelSim
+source_file = 1, C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad6.vhd
 source_file = 1, C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad1.vhd
 source_file = 1, C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/Waveform.vwf
 source_file = 1, C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad2.vhd
 source_file = 1, C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad3.vhd
+source_file = 1, C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/Waveform1.vwf
+source_file = 1, C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad4.vhd
+source_file = 1, C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/Waveform2.vwf
+source_file = 1, C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/actividad5.vhd
+source_file = 1, C:/intelFPGA_lite/Grupo_FPGA/Examples-VHDL/Actividad1/Waveform3.vwf
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd

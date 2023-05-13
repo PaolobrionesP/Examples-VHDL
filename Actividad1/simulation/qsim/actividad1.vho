@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "05/02/2023 19:23:08"
+-- DATE "05/11/2023 23:53:19"
 
 -- 
 -- Device: Altera EP4CE6E22C8 Package TQFP144
@@ -78,7 +78,7 @@ ENTITY 	actividad3 IS
     PORT (
 	ctrl : IN std_logic_vector(1 DOWNTO 0);
 	x : IN std_logic_vector(1 DOWNTO 0);
-	y : BUFFER std_logic_vector(1 DOWNTO 0)
+	y : OUT std_logic_vector(1 DOWNTO 0)
 	);
 END actividad3;
 

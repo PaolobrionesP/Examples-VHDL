@@ -18,9 +18,9 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/02/2023 18:01:11"
+-- Generated on "05/11/2023 23:11:16"
                                                              
--- Vhdl Test Bench(with test vectors) for design  :          actividad1
+-- Vhdl Test Bench(with test vectors) for design  :          actividad2
 -- 
 -- Simulation tool : 3rd Party
 -- 
@@ -28,23 +28,23 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY actividad1_vhd_vec_tst IS
-END actividad1_vhd_vec_tst;
-ARCHITECTURE actividad1_arch OF actividad1_vhd_vec_tst IS
+ENTITY actividad2_vhd_vec_tst IS
+END actividad2_vhd_vec_tst;
+ARCHITECTURE actividad2_arch OF actividad2_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL en : STD_LOGIC;
 SIGNAL entrada : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL salida : STD_LOGIC_VECTOR(3 DOWNTO 0);
-COMPONENT actividad1
+COMPONENT actividad2
 	PORT (
 	en : IN STD_LOGIC;
 	entrada : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-	salida : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0)
+	salida : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
-	i1 : actividad1
+	i1 : actividad2
 	PORT MAP (
 -- list connections between master ports and signals
 	en => en,
@@ -56,34 +56,128 @@ BEGIN
 t_prcs_en: PROCESS
 BEGIN
 	en <= '1';
-	WAIT FOR 320000 ps;
+	WAIT FOR 120000 ps;
+	en <= '0';
+	WAIT FOR 110000 ps;
+	en <= '1';
+	WAIT FOR 50000 ps;
 	en <= '0';
 WAIT;
 END PROCESS t_prcs_en;
 -- entrada[1]
 t_prcs_entrada_1: PROCESS
 BEGIN
-	FOR i IN 1 TO 6
-	LOOP
-		entrada(1) <= '0';
-		WAIT FOR 80000 ps;
-		entrada(1) <= '1';
-		WAIT FOR 80000 ps;
-	END LOOP;
+	entrada(1) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(1) <= '0';
+	WAIT FOR 40000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 60000 ps;
+	entrada(1) <= '0';
+	WAIT FOR 60000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(1) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(1) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(1) <= '0';
+	WAIT FOR 60000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 60000 ps;
+	entrada(1) <= '0';
+	WAIT FOR 60000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 40000 ps;
+	entrada(1) <= '0';
+	WAIT FOR 80000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 80000 ps;
+	entrada(1) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(1) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 60000 ps;
+	entrada(1) <= '0';
+	WAIT FOR 80000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(1) <= '0';
+	WAIT FOR 40000 ps;
+	entrada(1) <= '1';
+	WAIT FOR 20000 ps;
 	entrada(1) <= '0';
 WAIT;
 END PROCESS t_prcs_entrada_1;
 -- entrada[0]
 t_prcs_entrada_0: PROCESS
 BEGIN
-	FOR i IN 1 TO 12
-	LOOP
-		entrada(0) <= '0';
-		WAIT FOR 40000 ps;
-		entrada(0) <= '1';
-		WAIT FOR 40000 ps;
-	END LOOP;
+	entrada(0) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 40000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 40000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 80000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 40000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 60000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 40000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 80000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 60000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 80000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 40000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 60000 ps;
+	entrada(0) <= '0';
+	WAIT FOR 20000 ps;
+	entrada(0) <= '1';
+	WAIT FOR 40000 ps;
 	entrada(0) <= '0';
 WAIT;
 END PROCESS t_prcs_entrada_0;
-END actividad1_arch;
+END actividad2_arch;

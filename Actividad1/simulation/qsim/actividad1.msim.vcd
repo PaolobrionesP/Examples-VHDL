@@ -3,7 +3,7 @@ $comment
 		vcd file actividad1.msim.vcd -direction
 $end
 $date
-	Tue May 02 19:23:11 2023
+	Thu May 11 23:53:30 2023
 $end
 $version
 	ModelSim Version 10.5b
@@ -70,14 +70,14 @@ x)
 0"
 0#
 1$
-0%
-1&
 00
 01
 02
 13
 04
 15
+0%
+1&
 $end
 #40000
 1"

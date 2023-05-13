@@ -7,9 +7,10 @@
 --*********************************
 
 --Using concurrent signal assignment statement
-library library IEEE;
+library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use IEEE.std_logic_unsigned.all;
 
 entity actividad4 is
     port (
@@ -22,7 +23,7 @@ end entity actividad4;
 architecture concurrente of actividad4 is
     
 begin
-    
+    agtb <= '1' when a(7)>b(7) else '0';
     
     
 end architecture concurrente;
